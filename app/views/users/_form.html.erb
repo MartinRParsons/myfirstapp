@@ -1,0 +1,22 @@
+<%= form_for(@user) do |f| %>
+	
+	<div class = "form-group">
+		<%= f.label :"first name" %><br>
+		<%= f.text_field :fname %>
+	</div>
+
+	<div class = "form-group">
+		<%= f.label :"last name" %><br>
+		<%= f.text_field :lname %>
+	</div>
+
+	<div class = "form-group">
+		<%= f.label :"email address" %><br>
+		<%= f.text_field :emailaddress %>
+	</div>
+
+	<p>
+		<%= f.submit class: "btn btn-primary" %>
+	</p>
+
+<% end %>
